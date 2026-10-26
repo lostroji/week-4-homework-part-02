@@ -61,20 +61,45 @@ header {
 }
 
 
-/* intro section */
+/* intro section grid-flex setup */
+/* media set up for intro section (360px - 768px) -> flex*/
+@media (max-width: 768px) {
+
+    .media-grid-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+}
+
+/* (768px - 1280px) -> flex */
+@media (min-width: 769px) {
+
+    .media-grid-flex {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
 /* 1. intro card */
 .card-intro-section {
     border-radius: 16px;
     background: linear-gradient(to bottom right, #04436B 30%, #C74600 100%);
     color: #fff;
-    border-right: 10px solid #06253A ;
+    border-right: 10px solid #06253A;
     position: relative;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     overflow: clip;
-    
+    max-height: fit-content;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+
     span {
         background-color: #18415D;
         border-radius: 20px;
@@ -83,7 +108,7 @@ header {
         width: fit-content;
         z-index: 1;
     }
-    
+
     p {
         color: #EEE4DE;
         z-index: 1;
@@ -111,3 +136,60 @@ header {
     right: 30%;
     width: 50%;
 }
+
+/* flex for title, description, feature cards, red notification */
+.all-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+/* 2.title & description */
+.gray-font-color {
+    color: #687683;
+}
+
+/* 3. small feature cards (specs) container */
+/* media set up for feature cards (360px - 768px) -> grid*/
+@media (max-width: 768px) {
+
+    .feature-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+}
+
+/* (768px - 1280px) -> flex */
+@media (min-width: 769px) {
+
+    .feature-card-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+    }
+}
+
+.feature-cards {
+    background-color: #fff;
+    border: 1px solid #D0D7E1;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+
+}
+
+.orange-font-bold {
+    font-weight: bold;
+}
+
+/* 4. red notification */
+.red-notification-container {
+    color: #667784;
+    background-color: #FFE7D4;
+    padding: 12px;
+    border-right: 5px solid #E44900;
+    border-radius: 12px;
+}
+
