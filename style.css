@@ -6,6 +6,12 @@
 
 body {
     font-family: "Estedad", sans-serif;
+    background: linear-gradient(to right, #F3F5F8, #DAE6F4);
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .orange-font-color {
@@ -16,7 +22,7 @@ header {
     border: 1px solid #D1DAE3;
     border-radius: 50px;
     padding: 18px;
-    margin: 10px ;
+    background-color: #FEFFFF;
 
     nav {
         display: flex;
@@ -52,4 +58,56 @@ header {
         justify-content: space-between;
         gap: 18px;
     }
+}
+
+
+/* intro section */
+/* 1. intro card */
+.card-intro-section {
+    border-radius: 16px;
+    background: linear-gradient(to bottom right, #04436B 30%, #C74600 100%);
+    color: #fff;
+    border-right: 10px solid #06253A ;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: clip;
+    
+    span {
+        background-color: #18415D;
+        border-radius: 20px;
+        border: 1px solid #7B8C98;
+        padding: 8px 18px;
+        width: fit-content;
+        z-index: 1;
+    }
+    
+    p {
+        color: #EEE4DE;
+        z-index: 1;
+    }
+
+    h1 {
+        z-index: 1;
+    }
+}
+
+.white-circle-bg {
+    position: absolute;
+    background-color: #255476;
+    border-radius: 50%;
+    width: 300px;
+    height: 250px;
+    left: -100px;
+    top: -80px;
+}
+
+.white-line {
+    border: #A08174 1px solid;
+    position: absolute;
+    bottom: 25px;
+    right: 30%;
+    width: 50%;
 }
