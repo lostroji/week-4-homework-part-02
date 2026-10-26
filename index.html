@@ -113,5 +113,57 @@
     </section>
 </main>
 
+<section>
+
+    <form>
+        <h2>درخواست راهنما</h2>
+        <p>سطح آشنایی فقط برای شناخت مخاطب است؛ همه سطح‌ها همین نسخه فارسی را درخواست می‌کنند.</p>
+
+        <!-- 1. first name input - form part -->
+        <div>
+            <label for="first-name">نام <span>(اختیاری)</span></label> <br>
+            <input class="input-width" type="text" name="first-name" id="first-name">
+        </div>
+
+        <!-- 2. email input - form part -->
+        <div>
+            <label for="email-address">ایمیل <span>(اجباری)</span></label> <br>
+            <input class="input-width" type="email" name="email-address" id="email-address" dir="ltr" required>
+        </div>
+
+        <!-- 3. select part - form part-->
+        <div>
+            <label for="level">سطح آشنایی <span>(اجباری)</span></label>
+            <select class="select-width" name="level" id="level" required>
+                <option value="beginner">تازه شروع کرده‌ام</option>
+                <option value="html-css">HTML-CSS مقدماتی را دیده‌ام</option>
+                <option value="review">برای مرور می‌خواهم</option>
+            </select>
+        </div>
+
+        <!-- 4. checkbox - form part -->
+        <div class="checkbox-container">
+            <input type="checkbox" name="terms-agreement" id="terms-agreement" required>
+            <label for="terms-agreement">مایلم راهنما را در ایمیل نمونه واردشده دریافت کنم. <span>(اجباری)</span></label>
+        </div>
+
+        <!-- 5. button - form part-->
+        <button type="submit">ارسال درخواست آزمایشی</button>
+
+        <!-- 6. hr - form part -->
+        <hr>
+
+        <!-- 7. form footer-->
+        <p class="font-weight-contact">تماس</p>
+        <p class="email-font">guide@example.com</p>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>راهنماخانه - نسخه آموزشی</p>
+</footer>
+
 </body>
 </html>
