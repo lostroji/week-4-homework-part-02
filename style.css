@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Estedad", sans-serif;
+    background: linear-gradient(to right, #F3F5F8, #DAE6F4);
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* form section */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #D0D7E1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+
+    div {
+
+        label {
+            font-weight: 500;
+        }
+
+        input,
+        select {
+            margin-top: 4px;
+            padding: 12px;
+            border: 2px solid #CDD6E0;
+            border-radius: 8px;
+            font-family: "Estedad", sans-serif;
+            color: #494949;
+        }
+
+        span {
+            color: #AD3700;
+            font-weight: 500;
+        }
+    }
+
+    button {
+        background-color: #E44800;
+        color: #fff;
+        border: 1px solid #AD3700;
+        border-radius: 30px;
+        padding: 12px 24px;
+        font-weight: bold;
+        width: fit-content;
+    }
+
+    hr {
+        border: 1px dashed #CFD8E1;
+    }
+}
+
+.input-width,
+.select-width {
+    width: 100%;
+}
+
+.checkbox-container {
+    background-color: #EDF1F5;
+    padding: 12px;
+    border-radius: 12px;
+
+    input {
+        margin-left: 4px;
+    }
+}
+
+.font-weight-contact {
+    font-weight: 500;
+}
+
+.email-font {
+    color: #AD3C00;
+    text-decoration: underline;
+    font-weight: 500;
+}
+/* media setup for form (768px - 1028px) -> flex column*/
+@media (min-width: 769px) {
+
+    form {
+        margin: 0 auto;
+    }
+}
+
+
+/* footer section */
+footer {
+    background-color: #EDF1F5;
+    margin: 40px -12px -12px -12px;
+    padding: 40px;
+
+    p {
+        text-align: center;
+        color: #616C85;
+    }
+}
