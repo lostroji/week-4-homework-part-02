@@ -62,7 +62,7 @@ header {
 
 
 /* intro section grid-flex setup */
-/* media set up for intro section (360px - 768px) -> flex*/
+/* media setup for intro section (360px - 768px) -> flex*/
 @media (max-width: 768px) {
 
     .media-grid-flex {
@@ -70,6 +70,10 @@ header {
         flex-direction: column;
         gap: 20px;
         justify-content: space-between;
+    }
+
+    .card-intro-section {
+        width: 100%;
     }
 }
 
@@ -80,6 +84,10 @@ header {
         display: flex;
         justify-content: space-between;
         gap: 20px;
+    }
+
+    .card-intro-section {
+        max-width: 300px;
     }
 }
 
@@ -96,7 +104,6 @@ header {
     gap: 40px;
     overflow: clip;
     max-height: fit-content;
-    max-width: 300px;
     margin-right: auto;
     margin-left: auto;
 
@@ -151,7 +158,7 @@ header {
 }
 
 /* 3. small feature cards (specs) container */
-/* media set up for feature cards (360px - 768px) -> grid*/
+/* media setup for feature cards (360px - 768px) -> grid*/
 @media (max-width: 768px) {
 
     .feature-card-container {
@@ -177,7 +184,6 @@ header {
     width: 100%;
     padding: 12px;
     border-radius: 12px;
-
 }
 
 .orange-font-bold {
@@ -193,3 +199,113 @@ header {
     border-radius: 12px;
 }
 
+
+/* chapter section: titles and descriptions */
+.all-chapters-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 0;
+}
+
+/* 1. chapter titles */
+.chapter-titles-container {
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #D0D7E1;
+    gap: 8px;
+
+    div {
+        background-color: #EDF1F5;
+        border-radius: 12px;
+        padding: 12px;
+        flex: 1;
+
+        span {
+            background-color: #FFE7D4;
+            color: #AD3700;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: small;
+            margin-left: 4px;
+            width: fit-content;
+        }
+
+        p {
+            /*width: 100%;*/
+            display: inline;
+            font-weight: 500;
+        }
+    }
+
+}
+
+/* media setup for chapter titles (360px - 768px) -> flex column*/
+@media (max-width: 768px) {
+
+    /*chapters title card*/
+    .chapter-titles-container {
+        flex-direction: column;
+    }
+
+    /* chapters description card */
+    .chapter-description-cards-container {
+        flex-direction: column;
+    }
+
+}
+
+/* (768px - 1280px) -> flex row*/
+@media (min-width: 769px) {
+
+    /*chapters title card*/
+    .chapter-titles-container {
+        flex-direction: row;
+    }
+
+    /* chapters description card */
+    .chapter-description-cards-container {
+        flex-direction: row;
+    }
+
+}
+
+/* 2. chapter description */
+.chapter-description-cards-container {
+    display: flex;
+    gap: 12px;
+    padding: 20px 0;
+    
+    div {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #D0D7E1;
+        gap: 8px;
+        flex: 1;
+
+        span {
+            background-color: #FFE7D4;
+            color: #AD3700;
+            width: fit-content;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 24px;
+            text-align: center;
+            font-size: small;
+        }
+    }
+}
+
+.red-chapter-number-font {
+    color: #E44900;
+    font-size: small;
+    font-weight: bold;
+}
