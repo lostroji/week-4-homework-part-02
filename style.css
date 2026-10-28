@@ -7,10 +7,13 @@
 body {
     font-family: "Estedad", sans-serif;
     background: linear-gradient(to top, #ECF1F5, #DAE6F4);
-    padding: 12px 12px 12px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.section-padding {
+    padding: 0 12px;
 }
 
 .orange-font-color {
@@ -21,6 +24,7 @@ header {
     border: 1px solid #D1DAE3;
     border-radius: 50px;
     padding: 18px;
+    margin: 12px;
     background-color: #FEFFFF;
 
     nav {
@@ -207,7 +211,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 20px 0;
+    padding: 20px 12px;
 }
 
 /* 1. chapter titles */
@@ -390,6 +394,8 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to top, #D6E0EB, #E2E8F0);
+    padding: 50px 0;
 }
 /* media setup for form (768px - 1028px) -> flex column*/
 @media (min-width: 769px) {
@@ -405,8 +411,7 @@ form {
 /* footer section */
 footer {
     background-color: #EDF1F5;
-    margin: 0 -12px -32px -12px;
-    padding: 40px;
+    padding: 20px;
 
     p {
         text-align: center;
